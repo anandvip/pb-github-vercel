@@ -8,34 +8,55 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            background-color: #c9c4d3;
+            color: #005ac0;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2 {
-            color: #2c3e50;
+        h1 {
+            text-align: center;
+            color: #005ac0;
+        }
+        .section {
+            background-color: #dbd7e4;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #005ac0;
+            border-bottom: 2px solid #005ac0;
+            padding-bottom: 5px;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         input[type="checkbox"] {
             margin-right: 10px;
         }
+        label {
+            color: #005ac0;
+            font-weight: bold;
+        }
         textarea {
             width: 100%;
+            padding: 8px;
             margin-top: 5px;
-            margin-bottom: 15px;
+            border: 1px solid #005ac0;
+            border-radius: 4px;
+            background-color: #e8e5ee;
+            color: #005ac0;
         }
-        .section {
-            background-color: #f0f0f0;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+        textarea:focus {
+            outline: none;
+            border-color: #003a80;
+            box-shadow: 0 0 5px rgba(0, 90, 192, 0.5);
         }
     </style>
 </head>
@@ -69,7 +90,7 @@
                     "Download PocketBase executable",
                     "Create a `vercel.json` configuration file",
                     "Create an `index.js` file to run PocketBase",
-                    "Add any necessary environment variables",
+                    "Add necessary environment variables",
                     "Commit and push to GitHub"
                 ]
             },
@@ -86,8 +107,8 @@
             {
                 title: "Integration",
                 items: [
-                    "Update your frontend code with the Vercel-hosted PocketBase URL",
-                    "Test PocketBase operations from your frontend",
+                    "Update frontend code with Vercel-hosted PocketBase URL",
+                    "Test PocketBase operations from frontend",
                     "Implement error handling and loading states"
                 ]
             },
@@ -96,7 +117,7 @@
                 items: [
                     "Set up proper authentication in PocketBase",
                     "Configure CORS settings in PocketBase",
-                    "Implement proper error handling in frontend code",
+                    "Implement error handling in frontend code",
                     "Optimize API calls and data management"
                 ]
             },
@@ -112,22 +133,22 @@
                 title: "Vercel Requirements",
                 items: [
                     "Create a Vercel account",
-                    "Install Vercel CLI (optional, for local development)",
+                    "Install Vercel CLI (optional)",
                     "Connect GitHub account to Vercel",
-                    "Create `vercel.json` in your PocketBase repository",
-                    "Specify build settings and routes in `vercel.json`",
-                    "Set up environment variables in Vercel dashboard",
-                    "Configure automatic deployments from GitHub",
+                    "Create `vercel.json` in PocketBase repository",
+                    "Specify build settings and routes",
+                    "Set up environment variables",
+                    "Configure automatic deployments",
                     "Set up branch deployments (if needed)",
-                    "Configure custom domain in Vercel (optional)",
+                    "Configure custom domain (optional)",
                     "Ensure HTTPS is enabled",
                     "Set up log drainage (optional)",
                     "Configure performance monitoring",
                     "Check Vercel plan limits",
                     "Set up auto-scaling if needed",
-                    "Add team members to the Vercel project (if working in a team)",
-                    "Set up alerts for deployment failures or performance issues",
-                    "Plan for regular updates of PocketBase and other dependencies"
+                    "Add team members to project (if applicable)",
+                    "Set up alerts for deployment issues",
+                    "Plan for regular updates of dependencies"
                 ]
             }
         ];
